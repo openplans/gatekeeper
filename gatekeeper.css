@@ -1,0 +1,7 @@
+/* Invalid form element styles, only after the first submit */
+
+.form-submitted input:invalid,
+.form-submitted textarea:invalid,
+.form-submitted select:invalid {
+  border: 1px solid #b2182b;
+}

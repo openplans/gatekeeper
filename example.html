@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonah</title>
+  <link rel="stylesheet" href="example.css">
+  <link rel="stylesheet" href="gatekeeper.css">
+  <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <form action="" novalidate>
+    <section>
+      <label for="type-text">Select (select)</label>
+      <select name="type-select" id="type-select" required>
+        <option value="">Choose one</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </section>
+    <section>
+      <label for="type-text">Text Area (textarea)</label>
+      <textarea name="type-textarea" id="type-textarea" required></textarea>
+    </section>
+    <section>
+      <label for="type-text">Text (text)</label>
+      <input type="text" name="type-text" id="type-text" required>
+    </section>
+    <section>
+      <label for="type-search">Search (search)</label>
+      <input type="search" name="type-search" id="type-search">
+    </section>
+    <section>
+      <label for="type-tel">Telephone (tel)</label>
+      <input type="tel" name="type-tel" id="type-tel">
+    </section>
+    <section>
+      <label for="type-url">URL (url)</label>
+      <input type="url" name="type-url" id="type-url">
+    </section>
+    <section>
+      <label for="type-email">Email (email)</label>
+      <input type="email" name="type-email" id="type-email">
+    </section>
+    <section>
+      <label for="type-datetime">Date and Time (datetime)</label>
+      <input type="datetime" name="type-datetime" id="type-datetime">
+    </section>
+    <section>
+      <label for="type-date">Date (date)</label>
+      <input type="date" name="type-date" id="type-date">
+    </section>
+    <section>
+      <label for="type-month">Month (month)</label>
+      <input type="month" name="type-month" id="type-month">
+    </section>
+    <section>
+      <label for="type-week">Week (week)</label>
+      <input type="week" name="type-week" id="type-week">
+    </section>
+    <section>
+      <label for="type-time">Time (time)</label>
+      <input type="time" name="type-time" id="type-time">
+    </section>
+    <section>
+      <label for="type-datetime-local">Local Date and Time (datetime-local)</label>
+      <input type="datetime-local" name="type-datetime-local" id="type-datetime-local">
+    </section>
+    <section>
+      <label for="type-number">Number (number)</label>
+      <input type="number" name="type-number" id="type-number" min="0" max="20">
+    </section>
+    <section>
+      <label for="type-range">Range (range)</label>
+      <input type="range" name="type-range" id="type-range" min="0" max="100">
+    </section>
+    <section>
+      <label for="type-color">Color (color)</label>
+      <input type="color" name="type-color" id="type-color">
+    </section>
+    <section>
+      <input type="submit" value="Submit" name="submit">
+    </section>
+  </form>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="gatekeeper.js"></script>
+</body>
+</html>

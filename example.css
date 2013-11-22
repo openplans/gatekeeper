@@ -1,0 +1,31 @@
+html,
+body {
+  margin:0;
+  padding:0;
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+ font-weight: 300;
+}
+
+section {
+  padding: .5em 1em;
+}
+
+label {
+  display:block;
+  margin:0 0 3px;
+}
+
+input {font-size:1em;}
+
+textarea,
+input[type=text],
+input[type=search],
+input[type=tel],
+input[type=url],
+input[type=email] {
+  width:296px;
+  padding:2px;
+}
+
+input[type=number] {padding:2px;}
+
