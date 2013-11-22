@@ -89,5 +89,12 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="gatekeeper.js"></script>
+  <script>
+    $('form').on('submit', Gatekeeper.onValidSubmit(function(evt) {
+      alert('valid!');
+    }, function(evt) {
+      alert('invalid!');
+    }));
+  </script>
 </body>
 </html>

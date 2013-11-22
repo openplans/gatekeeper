@@ -32,23 +32,36 @@ var Gatekeeper = {};
     return invalidEls;
   };
 
-  // Bind to all forms in the document, forever
-  $(document).on('submit', 'form', function(evt) {
-    evt.preventDefault();
-
+  NS.validate = function(form) {
     // Get invalid elements from the form
-    var invalidEls = NS.getInvalidFormEls(this);
+    var invalidEls = NS.getInvalidFormEls(form);
 
     // Indicate that this form has been submitted
-    $(this).addClass('form-submitted');
+    $(form).addClass('form-submitted');
 
     if (invalidEls && invalidEls.length > 0) {
-      // Stops the submit event from triggering anywhere else
-      evt.stopImmediatePropagation();
-
       // Focus on the first invalid element
       invalidEls[0].focus();
       if (invalidEls[0].select) { invalidEls[0].select(); }
+
+      return false;
     }
-  });
+    return true;
+  };
+
+  NS.onValidSubmit = function(success, error) {
+    return function(evt) {
+      evt.preventDefault();
+
+      if (NS.validate(evt.target)) {
+        if (success) {
+          success.call(this, arguments);
+        }
+      } else {
+        if (error) {
+          error.call(this, arguments);
+        }
+      }
+    };
+  };
 }(Gatekeeper));

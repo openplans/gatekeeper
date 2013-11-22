@@ -3,5 +3,5 @@
 .form-submitted input:invalid,
 .form-submitted textarea:invalid,
 .form-submitted select:invalid {
-  border: 1px solid #b2182b;
+  border: 2px solid #b2182b;
 }
