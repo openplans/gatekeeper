@@ -55,11 +55,11 @@ var Gatekeeper = {};
 
       if (NS.validate(evt.target)) {
         if (success) {
-          success.call(this, arguments);
+          success.apply(this, arguments);
         }
       } else {
         if (error) {
-          error.call(this, arguments);
+          error.apply(this, arguments);
         }
       }
     };
