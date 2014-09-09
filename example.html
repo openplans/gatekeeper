@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jonah</title>
+  <title>Gatekeeper Example</title>
   <link rel="stylesheet" href="example.css">
   <link rel="stylesheet" href="gatekeeper.css">
   <!--[if IE]>
@@ -14,8 +14,31 @@
 <body>
   <form action="" novalidate>
     <section>
-      <label for="type-text">Select (select)</label>
-      <select name="type-select" id="type-select" required>
+      <header>Checkbox (checkbox)</header>
+
+      <label for="type-checkbox-a">A</label>
+      <input type="checkbox" name="type-checkbox" value="a" id="type-checkbox-a" required>
+      <label for="type-checkbox-b">B</label>
+      <input type="checkbox" name="type-checkbox" value="b" id="type-checkbox-b" required>
+      <label for="type-checkbox-c">C</label>
+      <input type="checkbox" name="type-checkbox" value="c" id="type-checkbox-c" required>
+    </section>
+
+    <section>
+      <header>Radio (radio)</header>
+
+      <label for="type-radio-a">A</label>
+      <input type="radio" name="type-radio" value="a" id="type-radio-a" required>
+      <label for="type-radio-b">B<l/abel>
+      <input type="radio" name="type-radio" value="b" id="type-radio-b" required>
+      <label for="type-radio-c">C</label>
+      <input type="radio" name="type-radio" value="c" id="type-radio-c" required>
+    </section>
+
+
+    <section>
+      <header>Select (select)</header>
+      <select name="type-select" required>
         <option value="">Choose one</option>
         <option value="1">One</option>
         <option value="2">Two</option>
@@ -23,64 +46,64 @@
       </select>
     </section>
     <section>
-      <label for="type-text">Text Area (textarea)</label>
-      <textarea name="type-textarea" id="type-textarea" required></textarea>
+      <header>Text Area (textarea)</header>
+      <textarea name="type-textarea" required></textarea>
     </section>
     <section>
-      <label for="type-text">Text (text)</label>
-      <input type="text" name="type-text" id="type-text" required>
+      <header>Text (text)</header>
+      <input type="text" name="type-text" required>
     </section>
     <section>
-      <label for="type-search">Search (search)</label>
-      <input type="search" name="type-search" id="type-search">
+      <header>Search (search)</header>
+      <input type="search" name="type-search">
     </section>
     <section>
-      <label for="type-tel">Telephone (tel)</label>
-      <input type="tel" name="type-tel" id="type-tel">
+      <header>Telephone (tel)</header>
+      <input type="tel" name="type-tel">
     </section>
     <section>
-      <label for="type-url">URL (url)</label>
-      <input type="url" name="type-url" id="type-url">
+      <header>URL (url)</header>
+      <input type="url" name="type-url">
     </section>
     <section>
-      <label for="type-email">Email (email)</label>
-      <input type="email" name="type-email" id="type-email">
+      <header>Email (email)</header>
+      <input type="email" name="type-email">
     </section>
     <section>
-      <label for="type-datetime">Date and Time (datetime)</label>
-      <input type="datetime" name="type-datetime" id="type-datetime">
+      <header>Date and Time (datetime)</header>
+      <input type="datetime" name="type-datetime">
     </section>
     <section>
-      <label for="type-date">Date (date)</label>
-      <input type="date" name="type-date" id="type-date">
+      <header>Date (date)</header>
+      <input type="date" name="type-date">
     </section>
     <section>
-      <label for="type-month">Month (month)</label>
-      <input type="month" name="type-month" id="type-month">
+      <header>Month (month)</header>
+      <input type="month" name="type-month">
     </section>
     <section>
-      <label for="type-week">Week (week)</label>
-      <input type="week" name="type-week" id="type-week">
+      <header>Week (week)</header>
+      <input type="week" name="type-week">
     </section>
     <section>
-      <label for="type-time">Time (time)</label>
-      <input type="time" name="type-time" id="type-time">
+      <header>Time (time)</header>
+      <input type="time" name="type-time">
     </section>
     <section>
-      <label for="type-datetime-local">Local Date and Time (datetime-local)</label>
-      <input type="datetime-local" name="type-datetime-local" id="type-datetime-local">
+      <header>Local Date and Time (datetime-local)</header>
+      <input type="datetime-local" name="type-datetime-local">
     </section>
     <section>
-      <label for="type-number">Number (number)</label>
-      <input type="number" name="type-number" id="type-number" min="0" max="20">
+      <header>Number (number)</header>
+      <input type="number" name="type-number">
     </section>
     <section>
-      <label for="type-range">Range (range)</label>
-      <input type="range" name="type-range" id="type-range" min="0" max="100">
+      <header>Range (range)</header>
+      <input type="range" name="type-range">
     </section>
     <section>
-      <label for="type-color">Color (color)</label>
-      <input type="color" name="type-color" id="type-color">
+      <header>Color (color)</header>
+      <input type="color" name="type-color">
     </section>
     <section>
       <input type="submit" value="Submit" name="submit">
